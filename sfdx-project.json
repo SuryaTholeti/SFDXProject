@@ -5,7 +5,8 @@
       "default": true
     }
   ],
+  "name": "sf projects with git",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "45.0"
+  "sourceApiVersion": "62.0"
 }
