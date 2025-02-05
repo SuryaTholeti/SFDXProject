@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="LWC Calculator" icon-name="utility:calculator">
+        <div class="slds-p-around_medium">
+            <lightning-input type="number" label="Enter First Number" value={firstNumber} onchange={handleFirstNumberChange}></lightning-input>
+            <lightning-input type="number" label="Enter Second Number" value={secondNumber} onchange={handleSecondNumberChange}></lightning-input>
+            
+            <div class="slds-m-top_medium">
+                <lightning-button label="Add" title="Addition" onclick={handleAddition} class="slds-m-right_x-small"></lightning-button>
+                <lightning-button label="Subtract" title="Subtraction" onclick={handleSubtraction} class="slds-m-right_x-small"></lightning-button>
+                <lightning-button label="Multiply" title="Multiplication" onclick={handleMultiplication} class="slds-m-right_x-small"></lightning-button>
+                <lightning-button label="Divide" title="Division" onclick={handleDivision}></lightning-button>
+            </div>
+
+            <div class="slds-m-top_medium result">
+                <strong>Result: {result}</strong>
+            </div>
+        </div>
+    </lightning-card>
+</template>
